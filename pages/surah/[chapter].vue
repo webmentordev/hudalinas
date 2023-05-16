@@ -28,9 +28,12 @@
     verse.value = route.params.chapter;
     onMounted(() => {
         $fetch(`https://api.quran.com/api/v3/chapters/${verse.value}`).then((result) => {
+            useHead({
+                title: `${result.chapter.name_simple} — Hudalinas`
+            });
             $fetch(`https://api.quran.com/api/v3/chapters/${verse.value}/verses?limit=${result.chapter.verses_count}&translations=21&language=en&text_type=words`).then((response) => {
                 data.value = response.verses
             })
-        })
-    })
+        });
+    });
 </script>
