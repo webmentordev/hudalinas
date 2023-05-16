@@ -3,8 +3,13 @@
         <div class="max-w-5xl m-auto px-4" v-if="data.length">
             <img src="@/assets/images/bismillah.jpg" v-show="verse != 9" class="max-w-[300px] w-full m-auto" alt="bismillah Logo">
             <ul class="py-6 verses">
-                <li class="bg-gray-50 p-6 mb-2 rounded-lg text-2xl flex flex-col" v-for="(verse, index) in data" :key="index">
-                    <span class="text-end mb-3">{{ verse.text_madani }}</span>
+                <li class="bg-light-purple/10 p-6 mb-4 rounded-lg text-2xl flex flex-col" v-for="(verse, index) in data" :key="index">
+                    <span class="text-end mb-3">
+                        <div class="flex justify-end text-3xl">
+                            <span class="order-2 text-sm p-1 px-2 h-fit rounded-full text-white bg-light-purple/80 ml-3">{{ index + 1 }}</span>
+                            <span class="leading-9">{{ verse.text_madani }}</span>
+                        </div>
+                    </span>
                     <span class="text-start text-sm">{{ verse.translations[0].text }}</span>
                 </li>
             </ul>
