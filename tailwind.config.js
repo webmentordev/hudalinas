@@ -12,7 +12,9 @@ module.exports = {
         colors: {
           "light-blue": "#6A9DBD",
           "light-orange": "#E5753E",
-          "light-purple": "#7069BD"
+          "light-purple": "#7069BD",
+          "dark": "#0F0F10",
+          "dark-100": "#252527"
         }
       },
     },

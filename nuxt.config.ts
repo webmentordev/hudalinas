@@ -12,6 +12,12 @@ export default defineNuxtConfig({
                     name: "description",
                     content: "Hudalinas is a powerful and enlightening literary work that explores the tenets, principles, and spiritual essence of Islam. Authored by a devout follower of the faith, this book serves as a guide for individuals seeking a deeper understanding of Islam and its profound impact on personal transformation."
                 }
+            ],
+            link: [
+                {
+                    rel: "shortcut icon",
+                    href: "/favicon.png"
+                }
             ]
         }
     }

@@ -1,6 +1,6 @@
 <template>
     <section class="w-full">
-        <div class="max-w-5xl m-auto py-6 px-4 about-section">
+        <div class="max-w-5xl m-auto py-6 px-4 about-section text-white">
             <div class="w-full relative flex items-center justify-center rounded-lg overflow-hidden h-[600px] mb-6 bg-cover bg-center" style="background-image: url('/about.jpg');">
                 <div class="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-10 backdrop-blur-sm"></div>
                 <h1 class="text-6xl relative z-20 text-white text-center leading-[80px]">About<br>Hudalinas</h1>
